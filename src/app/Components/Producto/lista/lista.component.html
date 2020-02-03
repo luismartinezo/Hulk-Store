@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-4" *ngFor="let producto of productos">
+          <div class="card" style="width: 18rem;"
+          routerLink="/detalle/{{producto.id}}" style="cursor: pointer;">
+              <img src="../../../../assets/img/{{producto.img}}" class="card-img-top" alt="imagen  producto">
+              <div class="card-body">
+                <h5 class="card-title">{{producto.nombreProducto}}</h5>
+                <p class="card-text"></p>
+              </div>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+            
+      </div>
+  </div>
+</div>
+

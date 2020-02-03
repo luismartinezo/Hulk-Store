@@ -3,13 +3,12 @@ import { Producto } from 'src/app/models/producto';
 import { ProductoService } from 'src/app/Services/producto.service';
 
 @Component({
-  selector: 'app-lista-producto',
-  templateUrl: './lista-producto.component.html',
-  styleUrls: ['./lista-producto.component.css']
+  selector: 'app-borrar',
+  templateUrl: './borrar.component.html',
+  styleUrls: ['./borrar.component.css']
 })
-export class ListaProductoComponent implements OnInit {
+export class BorrarComponent implements OnInit {
 
-  
   productos: Producto[] = [];
 
   constructor(private productoService: ProductoService) { }
@@ -21,12 +20,19 @@ export class ListaProductoComponent implements OnInit {
   cargarProductos(): void {
     this.productoService.lista().subscribe(data => {
       this.productos = data;
-      console.log(this.productos);
     },
       (err: any) => {
         console.log(err);
       }
     );
+  }
+
+  onDelete(id: number): void {
+    if (confirm('¿Estás seguro?')) {
+      this.productoService.borrar(id).subscribe(data => {
+        this.cargarProductos();
+      });
+    }
   }
 
 }

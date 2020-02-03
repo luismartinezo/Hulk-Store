@@ -6,16 +6,24 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ListaProductoComponent } from './Components/lista-producto/lista-producto.component';
+import { ListaProductoComponent } from './Components/Producto/lista/lista.component';
 import { HomeComponent } from './Components/Home/home/home.component';
 import { HeaderComponent } from './Components/Header/header/header.component';
+import { DetalleComponent } from './Components/Producto/detalle/detalle.component';
+import { NuevoComponent } from './Components/Producto/nuevo/nuevo.component';
+import { EditarComponent } from './Components/Producto/editar/editar.component';
+import { BorrarComponent } from './Components/Producto/borrar/borrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaProductoComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetalleComponent,
+    NuevoComponent,
+    EditarComponent,
+    BorrarComponent
   ],
   imports: [
     BrowserModule,

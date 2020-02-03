@@ -27,7 +27,9 @@ export class ProductoService {
   }
 
   public editar(producto: Producto, id: number): Observable<any> {
+    console.log(producto);
     return this.httpClient.put<any>(this.productoURL + `actualizar/${id}`, producto, cabecera);
+    
   }
 
   public borrar(id: number): Observable<any> {
