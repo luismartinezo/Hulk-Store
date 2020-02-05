@@ -21,6 +21,9 @@ export class ProductoService {
   public detalle(id: number): Observable<Producto> {
     return this.httpClient.get<Producto>(this.productoURL + `detalle/${id}`, cabecera);
   }
+  public factura(id: number): Observable<Producto> {
+    return this.httpClient.get<Producto>(this.productoURL + `factura/${id}`, cabecera);
+  }
 
   public crear(producto: Producto): Observable<any> {
     return this.httpClient.post<any>(this.productoURL + 'nuevo', producto, cabecera);

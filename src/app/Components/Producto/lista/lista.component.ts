@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
 import { ProductoService } from 'src/app/Services/producto.service';
 import { CarritoService } from 'src/app/Services/carrito.service';
-import swal from 'sweetalert';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-producto',
@@ -15,7 +15,9 @@ export class ListaProductoComponent implements OnInit {
   
   productos: Producto[] = [];
 
-  constructor(private productoService: ProductoService, private carritoService: CarritoService) { }
+  constructor(private productoService: ProductoService, 
+              private carritoService: CarritoService,
+              private router: Router) { }
 
   ngOnInit() {
     this.cargarProductos();
@@ -39,6 +41,10 @@ export class ListaProductoComponent implements OnInit {
   addProducto(producto) {
     console.log(producto);
     this.carritoService.addCarrito(producto);
+  }
+
+  factura() {
+    this.router.navigate(['factura']);
   }
 
 }

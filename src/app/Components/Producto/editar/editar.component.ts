@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoService } from 'src/app/Services/producto.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+
+// CommonJS
+// const Swal = require('sweetalert2')
 
 @Component({
   selector: 'app-editar',
@@ -44,7 +49,8 @@ export class EditarComponent implements OnInit {
       this.actualizado = true;
       this.failActualizado = false;
       this.msjOK = data.mensaje;
-      swal(this.msjOK);
+      // swal(this.msjOK);
+      Swal.fire(this.msjOK)
       this.router.navigate(['lista']);
     },
     (err: any) => {

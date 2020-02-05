@@ -14,6 +14,7 @@ import { NuevoComponent } from './Components/Producto/nuevo/nuevo.component';
 import { EditarComponent } from './Components/Producto/editar/editar.component';
 import { BorrarComponent } from './Components/Producto/borrar/borrar.component';
 import { CarritoComponent } from './Components/Carrito/carrito/carrito.component';
+import { FacturaComponent } from './Components/Carrito/factura/factura.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CarritoComponent } from './Components/Carrito/carrito/carrito.component
     NuevoComponent,
     EditarComponent,
     BorrarComponent,
-    CarritoComponent
+    CarritoComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule,

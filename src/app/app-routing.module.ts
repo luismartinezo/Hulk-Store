@@ -6,6 +6,7 @@ import { ListaProductoComponent } from './Components/Producto/lista/lista.compon
 import { DetalleComponent } from './Components/Producto/detalle/detalle.component';
 import { NuevoComponent } from './Components/Producto/nuevo/nuevo.component';
 import { EditarComponent } from './Components/Producto/editar/editar.component';
+import { FacturaComponent } from './Components/Carrito/factura/factura.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'lista', component: ListaProductoComponent},
   {path: 'detalle/:id', component: DetalleComponent},
+  {path: 'factura', component: FacturaComponent},
   {path: 'nuevo', component: NuevoComponent},
   {path: 'editar/:id', component: EditarComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
