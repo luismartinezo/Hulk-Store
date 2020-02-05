@@ -1,29 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { CarritoService } from 'src/app/Services/carrito.service';
 import { Producto } from 'src/app/models/producto';
 import { Subscription } from 'rxjs';
+import { CarritoService } from 'src/app/Services/carrito.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
-  providers: [CarritoService]
+  selector: 'app-carrito',
+  templateUrl: './carrito.component.html',
+  styleUrls: ['./carrito.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class CarritoComponent implements OnInit {
 
-  public carrito: Array<Producto> = [];
-  public subscription: Subscription;
-  public total: number;
+  private carrito: Array<Producto> = [];
+  private subscription: Subscription;
+  private total: number;
 
   constructor(private carritoService: CarritoService) { }
 
   ngOnInit() {
     this.carritoService.getCarrito().subscribe(data => {
+      console.log(data);
       this.carrito = data;
       this.total = this.carritoService.getTotal();
-      console.log(this.carrito);
     },
       error => alert(error));
   }
+
 
 }

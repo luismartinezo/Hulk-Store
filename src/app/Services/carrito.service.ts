@@ -17,7 +17,9 @@ export class CarritoService {
    * @param producto
    */
   addCarrito(producto: Producto) {
+    // console.log('servicio: ', producto)
     this.subject.next([...this.itemsCarrito, producto]);
+    // console.log(this.subject.next([...this.itemsCarrito, producto]));
   }
 
   /**
@@ -37,10 +39,10 @@ export class CarritoService {
   /**
    * getTotal
    */
-  // getTotal() {
-  //   return this.itemsCarrito.reduce((total, producto: Producto) => { 
-  //     return total + producto.precio; }, 0);
-  // }
+  getTotal() {
+    return this.itemsCarrito.reduce((total, producto: Producto) => { 
+      return total + producto.precio; }, 0);
+  }
 
   
 

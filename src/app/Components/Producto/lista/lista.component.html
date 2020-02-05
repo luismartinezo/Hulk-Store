@@ -1,17 +1,47 @@
 <div class="container">
   <div class="row">
-      <div class="col-md-4" *ngFor="let producto of productos">
-          <div class="card" style="width: 18rem;"
-          routerLink="/detalle/{{producto.id}}" style="cursor: pointer;">
+    <!-- <div class="col-md-10"> -->
+      <div class="col-md-3" *ngFor="let producto of productos">
+          <div class="card">
+            <div style="width: 18rem;" routerLink="/detalle/{{producto.id}}" style="cursor: pointer;">
               <img src="../../../../assets/img/{{producto.img}}" class="card-img-top" alt="imagen  producto">
               <div class="card-body">
                 <h5 class="card-title">{{producto.nombreProducto}}</h5>
                 <p class="card-text"></p>
               </div>
-              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
             </div>
-            
+            <a (click)="addProducto(producto)" class="btn btn-primary" 
+            data-toggle="modal" data-target="#exampleModal">Agregar al Carrito</a>
+            </div>
       </div>
+    <!-- </div> -->
+      
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          Carrito de Compra</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12">
+          <app-carrito></app-carrito>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p><i>Cierra la ventana y continua agregando mas productos!</i></p>
+      </div>
+    </div>
   </div>
 </div>
-
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>

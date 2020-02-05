@@ -24,7 +24,7 @@ export class DetalleComponent implements OnInit {
       this.producto = data;
     },
       err => {
-        this.router.navigate(['']);
+        this.router.navigate(['lista']);
       }
     );
   }
@@ -32,6 +32,7 @@ export class DetalleComponent implements OnInit {
   cargarProductos(): void {
     this.productoService.lista().subscribe(data => {
       this.productos = data;
+      console.log(this.productos)
     },
       (err: any) => {
         console.log(err);
@@ -39,9 +40,10 @@ export class DetalleComponent implements OnInit {
     );
   }
   onDelete(id: number): void {
-    if (confirm('¿Estás seguro?')) {
+    if (confirm('¿Está seguro que deseas eliminar el producto?')) {
       this.productoService.borrar(id).subscribe(data => {
         this.cargarProductos();
+        this.router.navigate(['lista']);
       });
     }
   }

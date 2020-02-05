@@ -10,10 +10,11 @@
                 <h3 class="card-title">{{producto.nombreProducto}}</h3>
                 <p class="card-text">{{producto.descripcion}}</p>
                    <h4 style="color: red;">${{producto.precio}}</h4>
+                   <h5>Cantidad: {{producto.cantidad}}</h5>
               </div>
               <button class="btn btn-primary" (click)="volver()">Volver</button>
               <button class="btn btn-warning" routerLink="/editar/{{producto.id}}">Actualizar</button>
-              <button class="btn btn-danger" (click)="onDelete(producto.id)">Borrar</button>
+              <button class="btn btn-danger" (click)="onDelete(producto.id)">Comprar</button>
               
         </div>
         

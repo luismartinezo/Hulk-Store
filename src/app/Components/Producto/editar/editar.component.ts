@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoService } from 'src/app/Services/producto.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-editar',
@@ -39,10 +40,12 @@ export class EditarComponent implements OnInit {
   onUpdate(): void {
     const id = this.activatedRoute.snapshot.params.id;
     this.productoService.editar(this.form, id).subscribe( data => {
-      
+      // console.log(this.form);
       this.actualizado = true;
       this.failActualizado = false;
       this.msjOK = data.mensaje;
+      swal(this.msjOK);
+      this.router.navigate(['lista']);
     },
     (err: any) => {
       this.actualizado = false;

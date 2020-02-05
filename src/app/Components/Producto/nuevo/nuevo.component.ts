@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
 import { ProductoService } from 'src/app/Services/producto.service';
 import { Router } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-nuevo',
@@ -27,7 +28,8 @@ export class NuevoComponent implements OnInit {
       this.mensajeOK = data.mensaje;
       this.creado = true;
       this.failProducto = false;
-      this.router.navigate(['']);
+      swal(this.mensajeOK);
+      this.router.navigate(['lista']);
     },
       (err: any) => {
         this.mensajeFail = err.error.mensaje;

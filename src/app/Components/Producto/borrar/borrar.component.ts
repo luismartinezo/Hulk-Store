@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
 import { ProductoService } from 'src/app/Services/producto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-borrar',
@@ -11,7 +12,7 @@ export class BorrarComponent implements OnInit {
 
   productos: Producto[] = [];
 
-  constructor(private productoService: ProductoService) { }
+  constructor(private productoService: ProductoService, private router: Router) { }
 
   ngOnInit() {
     this.cargarProductos();
@@ -28,9 +29,10 @@ export class BorrarComponent implements OnInit {
   }
 
   onDelete(id: number): void {
-    if (confirm('¿Estás seguro?')) {
+    if (confirm('¿Estás seguro que deseas eliminar el producto?')) {
       this.productoService.borrar(id).subscribe(data => {
         this.cargarProductos();
+        this.router.navigate(['lista']);
       });
     }
   }

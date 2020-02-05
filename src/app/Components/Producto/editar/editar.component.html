@@ -12,6 +12,10 @@
             name="precio" [(ngModel)]="form.precio">
         </div>
         <div class="form-group">
+          <input type="number" class="form-control" placeholder="Cantidad de producto"
+          name="cantidad" [(ngModel)]="form.cantidad" required>
+      </div>
+        <div class="form-group">
             <textarea name="descripcion" cols="100" rows="10" 
             [(ngModel)]="form.descripcion" placeholder="Descripcion del Producto">
             </textarea>
