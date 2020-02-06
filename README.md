@@ -5,7 +5,8 @@ Tienda de productos para empleados, aquí podrás encontrar camisetas, vasos, co
 ## Directorio
 
 ![](../../../../assets/img/scaffolding.png?raw=true)
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/src/assets/img/scaffolding.png)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding.png?raw=true)
+https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding.png
 
 ## Instalacion
 
