@@ -1,0 +1,46 @@
+<div class="container" *ngIf="form.nombreProducto && !failInit">
+  <div class="row">
+      <div class="col-md-8">
+<h5>Actualizar Producto</h5>
+<form (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="Nombre del Producto"
+      name="nombreProducto" [(ngModel)]="form.name" required>
+  </div>
+  <div class="form-group">
+      <input type="number" class="form-control" placeholder="Ingrese valor del producto"
+      name="precio" [(ngModel)]="form.price">
+  </div>
+  <div class="form-group">
+    <input type="number" class="form-control" placeholder="Cantidad de producto"
+    name="cantidad" [(ngModel)]="form.amount" required>
+</div>
+  <div class="form-group">
+      <textarea name="descripcion" cols="100" rows="10"
+      [(ngModel)]="form.description" placeholder="Descripcion del Producto">
+      </textarea>
+  </div>
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="Nombre de la img"
+      name="img" [(ngModel)]="form.img" required>
+  </div>
+<div class="form-group">
+  <button type="submit" class="btn btn-success btn-lg" [disabled]="!f.valid">Actualizar</button>
+</div>
+</form>
+<div>
+<button class="btn btn-primary float-left mr-3" (click)="volver()">Volver</button>
+</div>
+<br>
+<br>
+<div *ngIf="failUpdated" class="float-left">
+<p class="p-3 bg-danger text-white rounded">Error: {{msjErr}}</p>
+</div>
+<div *ngIf="updated" class="float-left">
+<p class="p-3 bg-success text-white rounded">OK: {{msjOK}}</p>
+</div>
+<div class="alert alert-success" role="alert" *ngIf="updated" class="float-left">
+  OK: {{msjOK}}
+</div>
+</div>
+</div></div>

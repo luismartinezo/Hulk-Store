@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="alert alert-warning" role="alert">
+      Esta area pertenece al Administrador del Sistema.
+    </div>
+  <div class="row" *ngIf="product">
+      <div class="col-md-6">
+          <div class="card" style="width: 100%;">
+              <img src="/assets/img/{{product.img}}" alt="{{product.img}}" class="card-img-top">
+            </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card-body">
+              <h3 class="card-title">{{product.name}}</h3>
+              <p class="card-text">{{product.description}}</p>
+                 <h4 style="color: red;">${{product.price}}</h4>
+                 <h5>Cantidad Disponible: {{product.amount}}</h5>
+            </div>
+            <button class="btn btn-primary" (click)="volver()">Volver</button>
+            <button class="btn btn-warning" routerLink="/edit/{{product.id}}">Actualizar</button>
+            <button class="btn btn-danger" (click)="onDelete(product.id)">Eliminar</button>
+
+      </div>
+
+  </div>
+</div>
