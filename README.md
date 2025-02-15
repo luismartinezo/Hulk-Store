@@ -2,7 +2,8 @@
 
 Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes, including some alternatives created by the community.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes. This project was generated with[Angular CLI](https://github.com/angular/angular-cli) version 18.2.10 as Front and [Spring Boot Java](https://spring.io/projects/spring-boot) as Back and My[MySql](https://www.mysql.com/) database manager.
+
 
 ## Development server
 
@@ -27,9 +28,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# HulkStoreFront
-
-Tienda de productos para empleados, aquí podrás encontrar camisetas, vasos, comics, juguetes y accesorios basados en los superhéroes de Marvel y DC comics. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19 como Front y [Spring Boot Java](https://spring.io/projects/spring-boot) como Back  y gestor base de datos [MySql](https://www.mysql.com/).
 
 ## Directory
 
