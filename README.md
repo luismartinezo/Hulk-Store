@@ -31,11 +31,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Directory
 
-![](../../../../assets/img/scaffolding.png?raw=true)
+![](/assets/img/scaffolding.png?raw=true)
 FRONTEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/assets/img/scaffolding.png?raw=true)
 BACKEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding-back.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/assets/img/scaffolding-back.png?raw=true)
 
 ## Instalation
 
