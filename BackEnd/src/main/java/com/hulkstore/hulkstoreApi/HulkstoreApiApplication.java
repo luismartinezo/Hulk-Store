@@ -1,13 +1,13 @@
-package com.hulkstore;
+package com.hulkstore.hulkstoreApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HulkStoreApplication {
+public class HulkstoreApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HulkStoreApplication.class, args);
+		SpringApplication.run(HulkstoreApiApplication.class, args);
 	}
 
 }
