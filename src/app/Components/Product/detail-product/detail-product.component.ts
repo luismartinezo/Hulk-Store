@@ -25,6 +25,7 @@ export class DetailProductComponent implements OnInit {
      const id = this.activatedRoute.snapshot.params['id'];
     this.productService.detail(id).subscribe(data => {
       this.product = data;
+      console.log("ID: ",id);
     },
       err => {
         this.router.navigate(['list']);
@@ -34,7 +35,7 @@ export class DetailProductComponent implements OnInit {
   getProducts(): void {
     this.productService.list().subscribe(data => {
       this.products = data;
-      console.log(this.products)
+      console.log("TODOS: ",this.products);
     },
       (err: any) => {
         console.log(err);

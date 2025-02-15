@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./edit-product.component.css']
 })
 export class EditProductComponent implements OnInit {
-  form: any = {};
+  formEdit: any = {};
   updated = false;
   failUpdated = false;
   msjErr = '';
@@ -28,10 +28,11 @@ export class EditProductComponent implements OnInit {
   ngOnInit() {
     const id = this.activatedRoute.snapshot.params['id'];
     this.productService.detail(id).subscribe( data => {
-      this.form.name = data.name;
-      this.form.price = data.price;
-      this.form.description = data.description;
-      this.form.img = data.img;
+      this.formEdit.name = data.name;
+      this.formEdit.price = data.price;
+      this.formEdit.description = data.description;
+      this.formEdit.img = data.img;
+      console.log("edit ID: ",id);
     },
       (err: any) => {
         this.failInit = true;
@@ -41,12 +42,11 @@ export class EditProductComponent implements OnInit {
   }
   onUpdate(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.productService.update(this.form, id).subscribe( data => {
-      // console.log(this.form);
+    this.productService.update(this.formEdit, id).subscribe( data => {
+     console.log(this.formEdit);
       this.updated = true;
       this.failUpdated = false;
       this.msjOK = data.mensaje;
-      // swal(this.msjOK);
       Swal.fire(this.msjOK)
       this.router.navigate(['list']);
     },

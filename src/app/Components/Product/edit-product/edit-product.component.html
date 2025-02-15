@@ -1,28 +1,28 @@
-<div class="container" *ngIf="form.nombreProducto && !failInit">
+<div class="container" *ngIf="formEdit.name && !failInit">
   <div class="row">
       <div class="col-md-8">
 <h5>Actualizar Producto</h5>
-<form (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+<form name="formEdit" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
   <div class="form-group">
       <input type="text" class="form-control" placeholder="Nombre del Producto"
-      name="nombreProducto" [(ngModel)]="form.name" required>
+      name="nombreProducto" [(ngModel)]="formEdit.name" required>
   </div>
   <div class="form-group">
       <input type="number" class="form-control" placeholder="Ingrese valor del producto"
-      name="precio" [(ngModel)]="form.price">
+      name="price" [(ngModel)]="formEdit.price">
   </div>
   <div class="form-group">
     <input type="number" class="form-control" placeholder="Cantidad de producto"
-    name="cantidad" [(ngModel)]="form.amount" required>
+    name="amount" [(ngModel)]="formEdit.amount" required>
 </div>
   <div class="form-group">
-      <textarea name="descripcion" cols="100" rows="10"
-      [(ngModel)]="form.description" placeholder="Descripcion del Producto">
+      <textarea name="description" cols="100" rows="10"
+      [(ngModel)]="formEdit.description" placeholder="Descripcion del Producto">
       </textarea>
   </div>
   <div class="form-group">
       <input type="text" class="form-control" placeholder="Nombre de la img"
-      name="img" [(ngModel)]="form.img" required>
+      name="img" [(ngModel)]="formEdit.img" required>
   </div>
 <div class="form-group">
   <button type="submit" class="btn btn-success btn-lg" [disabled]="!f.valid">Actualizar</button>
