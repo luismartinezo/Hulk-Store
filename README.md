@@ -33,9 +33,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![](/assets/img/scaffolding.png?raw=true)
 FRONTEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/assets/img/scaffolding.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/public/assets/img/scaffolding.png?raw=true)
 BACKEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/assets/img/scaffolding-back.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/public/assets/img/scaffolding-back.png?raw=true)
 
 ## Instalation
 
