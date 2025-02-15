@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hulkstore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
@@ -26,7 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
 # HulkStoreFront
 
 Tienda de productos para empleados, aquí podrás encontrar camisetas, vasos, comics, juguetes y accesorios basados en los superhéroes de Marvel y DC comics. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19 como Front y [Spring Boot Java](https://spring.io/projects/spring-boot) como Back  y gestor base de datos [MySql](https://www.mysql.com/).
@@ -41,7 +39,7 @@ BACKEND
 
 ## Instalacion
 
-- Se debe clonar y descargar el repositorio, corremos el comando seguido de la ruta del repositorio asi: `git clone` https://github.com/luismartinezo/Hulk-Store.git 
+- Se debe clonar y descargar el repositorio, corremos el comando seguido de la ruta del repositorio asi: `git clone` https://github.com/luismartinezo/Hulk-Store.git
 
 - Instalamos las dependencias dependencias de desarrollo con el comando `npm install`.
 
@@ -58,4 +56,3 @@ BACKEND
 
 
 
->>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39

@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
-/* You can add global styles to this file, and also import other style files */
 .margin-top-20 {
   margin-top: 20px;
 }
@@ -15,19 +13,3 @@
 .carrito-total {
   border-top:1px solid gray;
 }
-=======
-.margin-top-20 {
-    margin-top: 20px;
-}
-.margin-botton-10 {
-    margin-bottom: 10px;
-}
-
-.white {
-    color: #fff;
-}
-
-.carrito-total {
-    border-top:1px solid gray;
-}
->>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39
