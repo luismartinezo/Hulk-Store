@@ -1,4 +1,6 @@
-# Hulkstore
+# Hulk Store
+
+Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes, including some alternatives created by the community.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
@@ -29,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Tienda de productos para empleados, aquí podrás encontrar camisetas, vasos, comics, juguetes y accesorios basados en los superhéroes de Marvel y DC comics. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19 como Front y [Spring Boot Java](https://spring.io/projects/spring-boot) como Back  y gestor base de datos [MySql](https://www.mysql.com/).
 
-## Directorio
+## Directory
 
 ![](../../../../assets/img/scaffolding.png?raw=true)
 FRONTEND
@@ -37,22 +39,21 @@ FRONTEND
 BACKEND
 ![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding-back.png?raw=true)
 
-## Instalacion
+## Instalation
 
-- Se debe clonar y descargar el repositorio, corremos el comando seguido de la ruta del repositorio asi: `git clone` https://github.com/luismartinezo/Hulk-Store.git
+- You must clone and download the repository, we run the command followed by the repository path like this: `git clone` https://github.com/luismartinezo/Hulk-Store.git
 
-- Instalamos las dependencias dependencias de desarrollo con el comando `npm install`.
+- We install the development dependencies with the command `npm install`.
 
-- Creamos una base de datos Mysql llamada `hulkstore` y corremos el script sql en las capertas `FrontEnd/DataBase` para crear la tabla de `productos`.
+- We create a Mysql database called `hulk store` and run the sql script in the `FrontEnd/DataBase` folders to create the `products` table.
 
-- En nuestro IDE favorito NetBean, Eclipse u otro importamos el proyecto Maven - Spring Boot que se encuentra dentro de las carpetas `FrontEnd/BackEnd` que clonamos del repositorio git.
+- In our favorite IDE NetBean, Eclipse or another we import the Maven - Spring Boot project that is inside the folders `FrontEnd/BackEnd` that we cloned from the git repository.
 
+## Development Server
 
-## Servidor de Desarrollo
+- FRONTEND: We run the command `ng serve` to start the development server. We open in our browser the url: `http://localhost:4200/`. The application will be automatically reloaded with each change in the files.
 
-- FRONTEND: Corremos el comando `ng serve` para levantar el servidor de desarrollo. Abrimos en nuestro explorador la url: `http://localhost:4200/`. La aplicacion se recargara automaticamente con cada cambio en los archivos.
-
-- BACKEND: En nuestro IDE corremos el proyecto importado con clic derecho sobre él, `Run As` - `Spring Boot App`
+- BACKEND: In our IDE we run the imported project with right click on it, `Run As` - `Spring Boot App`
 
 
 
