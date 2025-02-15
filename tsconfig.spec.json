@@ -1,13 +1,27 @@
+<<<<<<< HEAD
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+=======
+>>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
+<<<<<<< HEAD
       "jasmine"
     ]
   },
+=======
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "src/test.ts",
+    "src/polyfills.ts"
+  ],
+>>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"

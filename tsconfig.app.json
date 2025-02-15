@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+=======
+>>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
@@ -7,9 +10,21 @@
     "types": []
   },
   "files": [
+<<<<<<< HEAD
     "src/main.ts"
   ],
   "include": [
     "src/**/*.d.ts"
+=======
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+>>>>>>> bb620e5f9ff819d5e6f8b8e65e8f588880e72e39
   ]
 }
