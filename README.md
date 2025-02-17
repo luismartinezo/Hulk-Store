@@ -1,7 +1,5 @@
 # Hulk Store
 
-Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes, including some alternatives created by the community.
-
 Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes. This project was generated with[Angular CLI](https://github.com/angular/angular-cli) version 18.2.10 as Front and [Spring Boot Java](https://spring.io/projects/spring-boot) as Back and My[MySql](https://www.mysql.com/) database manager.
 
 
@@ -31,11 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Directory
 
-![](../../../../assets/img/scaffolding.png?raw=true)
+![](/assets/img/scaffolding.png?raw=true)
 FRONTEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/public/assets/img/scaffolding.png?raw=true)
 BACKEND
-![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/src/assets/img/scaffolding-back.png?raw=true)
+![scaffolding](https://github.com/luismartinezo/Hulk-Store/blob/master/public/assets/img/scaffolding-back.png?raw=true)
 
 ## Instalation
 
@@ -52,6 +50,3 @@ BACKEND
 - FRONTEND: We run the command `ng serve` to start the development server. We open in our browser the url: `http://localhost:4200/`. The application will be automatically reloaded with each change in the files.
 
 - BACKEND: In our IDE we run the imported project with right click on it, `Run As` - `Spring Boot App`
-
-
-
