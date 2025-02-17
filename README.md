@@ -1,7 +1,5 @@
 # Hulk Store
 
-Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes, including some alternatives created by the community.
-
 Employee merchandise store, here you can find t-shirts, cups, comics, toys and accessories based on Marvel and DC comics superheroes. This project was generated with[Angular CLI](https://github.com/angular/angular-cli) version 18.2.10 as Front and [Spring Boot Java](https://spring.io/projects/spring-boot) as Back and My[MySql](https://www.mysql.com/) database manager.
 
 
