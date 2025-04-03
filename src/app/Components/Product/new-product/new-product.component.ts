@@ -27,14 +27,14 @@ export class NewProductComponent implements OnInit {
   }
   onCreate(): void {
     this.productService.create(this.form).subscribe(data => {
-      this.messageOK = data.mensaje;
+      this.messageOK = data.message;
       this.created = true;
       this.failProduct = false;
       Swal.fire(this.messageOK)
       this.router.navigate(['list']);
     },
       (err: any) => {
-        this.messageFail = err.error.mensaje;
+        this.messageFail = err.error.message;
         this.created = false;
         this.failProduct = true;
       }

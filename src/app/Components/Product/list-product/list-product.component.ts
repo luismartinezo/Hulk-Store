@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../../Models/Product';
 import { ShoppingService } from '../../../Services/Shopping.service';
 import { Router, RouterLink } from '@angular/router';
@@ -15,6 +15,8 @@ import { CommonModule } from '@angular/common';
 })
 export class ListProductComponent implements OnInit {
 
+  @Input()
+  user!: string;
   products: Product[] = [];
   constructor(private productService: ProductService,
     private shoppingService: ShoppingService,

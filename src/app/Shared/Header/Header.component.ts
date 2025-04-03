@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../../Models/Product';
 import { Subscription } from 'rxjs';
 import { ShoppingService } from '../../Services/Shopping.service';
@@ -26,5 +26,13 @@ export class HeaderComponent implements OnInit {
       console.log(this.shopping);
     },
       error => alert(error));
+  }
+
+  @Input() products: Product[] = [];
+
+  @Output() openEventEmitter = new EventEmitter();
+
+  openCart(): void{
+    this.openEventEmitter.emit();
   }
 }

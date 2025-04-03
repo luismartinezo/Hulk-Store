@@ -21,7 +21,7 @@ constructor() {
    * @param product
    */
   addShopping(product: Product) {
-    // console.log('servicio: ', producto)
+    console.log('servicio: ', product)
     this.subject.next([...this.itemsShopping, product]);
     // console.log(this.subject.next([...this.itemsCarrito, producto]));
   }
@@ -30,7 +30,7 @@ constructor() {
    * clearShopping
    */
   clearShopping() {
-    //this.subject.next(null);
+    this.subject.next([]);
   }
 
   /**

@@ -30,6 +30,7 @@ export class EditProductComponent implements OnInit {
     this.productService.detail(id).subscribe( data => {
       this.formEdit.name = data.name;
       this.formEdit.price = data.price;
+      this.formEdit.amount = data.amount;
       this.formEdit.description = data.description;
       this.formEdit.img = data.img;
       console.log("edit ID: ",id);
@@ -46,14 +47,14 @@ export class EditProductComponent implements OnInit {
      console.log(this.formEdit);
       this.updated = true;
       this.failUpdated = false;
-      this.msjOK = data.mensaje;
-      Swal.fire(this.msjOK)
+      this.msjOK = data.message;
+      Swal.fire("Product Update ",this.msjOK)
       this.router.navigate(['list']);
     },
     (err: any) => {
       this.updated = false;
       this.failUpdated = true;
-      this.msjErr = err.error.mensaje;
+      this.msjErr = err.error.message;
     }
     );
   }
